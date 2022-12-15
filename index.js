@@ -54,7 +54,7 @@ app.get('/history/:symbol/get', (req, res) => {
 					Low: cheerio.load(tdList[4]).text()
 				})
 			})
-			res.json(list)
+			res.json({history: list})
 		})
 })
 /*
